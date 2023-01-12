@@ -197,7 +197,7 @@ In this project you are going to create a tour attraction app, where you can dis
 ### Tasks
 
 - [ ] Reuse the Link component for the "back" link
-- [ ] refactor the `pages/places/[id].js` file into a dynamic folder with an `index.js`: `pages/places/[id]/index.js`
+- [ ] Refactor the `pages/places/[id].js` file into a dynamic folder with an `index.js`: `pages/places/[id]/index.js`
 - [ ] Add an `edit.js` in the `[id]` folder
 - [ ] Create a page component in this file which reuses the form component for rendering the input fields
 - [ ] If necessary, update the form component so that the current data of the attraction is already displayed as default values
