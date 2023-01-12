@@ -101,15 +101,15 @@ In this project you are going to create a tour attraction app, where you can dis
 - [ ] With the received data, create a new place document in the mongoDB
 - [ ] In the handleSubmit function, reroute the user to the main page after a successful `POST` request
 
-## Userstory 4
+## Userstory 4 - Attraction details
 
 ### Value Proposition
 
-**As a** User
+**As a** User,
 
-**I want to**
+**I want to** to see more information about places,
 
-**so that**
+**so that** I can decide if I want to go to this place.
 
 ### Description
 
@@ -117,17 +117,29 @@ In this project you are going to create a tour attraction app, where you can dis
 
 ### Acceptance Criteria
 
+- [ ] If a card is clicked, the user will see a details page
+- [ ] The place details page displays the name of the place
+- [ ] The place details page displays the image of the place
+- [ ] The place details page displays the location of the place
+- [ ] The place details page displays the description of the place
+- [ ] User can return to places list by clicking the back link
+- [ ] User can click on the location link to see the attraction on google maps
+
 ### Tasks
+
+- [ ] Create a place details component displaying the required elements
+- [ ] Add a places folder with a `[id].js` in the pages folder
+- [ ] Create a page component in this file which uses the place details component for rendering the attraction data
 
 ## Userstory 5
 
 ### Value Proposition
 
-**As a** User
+**As a** User,
 
-**I want to**
+**I want to** delete attractions from my places list,
 
-**so that**
+**so that** I can remove places that I do not want to visit anymore.
 
 ### Description
 
@@ -135,4 +147,46 @@ In this project you are going to create a tour attraction app, where you can dis
 
 ### Acceptance Criteria
 
+- [ ] A delete button is shown at the end of the places details page
+- [ ] If the delete button is clicked, the user will be redirected to the places list page
+- [ ] The attraction is removed from the places list
+
 ### Tasks
+
+- [ ] Create a delete button
+- [ ] Write an onClick function which handles the
+- [ ] Create a database function to `delete` one atrraction via id
+- [ ] Update the api endpoint in your `api/places/[id]` route for fetching the specific place from the database
+- [ ] Display the fetched place information to render the cards
+
+## Userstory 6
+
+### Value Proposition
+
+**As a** User,
+
+**I want to** edit my places information,
+
+**so that** the information about my attractions is always up to date.
+
+### Description
+
+![wireframe userstory 6](./assets/userstory-6.png)
+
+### Acceptance Criteria
+
+- [ ] An edit button is displayed next to the delete button
+- [ ] If the edit button is clicked, the user sees a form where he can edit the information about the attraction
+- [ ] The form is prefilled with the current data about the attraction in the corresponding input fields
+- [ ] A backlink leads to the details page and cancels the edit process
+- [ ] After editing the informations the user is redirected to the details page
+
+### Tasks
+
+- [ ] Reuse the Link component for the "back" link
+- [ ] Add an edit.js in the `[id]` folder
+- [ ] Create a page component in this file which reuses the form component for rendering the input fields
+- [ ] If necessary, update the form component so that the current data of the attraction is already displayed as default values
+- [ ] Write a handleSubmit function which expects a submit event object
+- [ ] Inside this function, send a `PATCH` request to the `api/places/[id]` api endpoint with the new place data in the body
+- [ ] Create the api endpoint to handle `GET` requests
