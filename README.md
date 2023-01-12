@@ -2,6 +2,8 @@
 
 In this project you are going to create a tour attraction app, where you can display, create, update and delete attraction entries in your own MongoDB database. So lets jump right in with the first userstory!
 
+---
+
 ## Userstory 1 - First Look
 
 ### Value Proposition
@@ -32,6 +34,8 @@ In this project you are going to create a tour attraction app, where you can dis
 - [ ] Create the title bar component
 - [ ] Create a card component displaying the required elements
 
+---
+
 ## Userstory 2 - Adding backend
 
 ### Value Proposition
@@ -61,6 +65,8 @@ In this project you are going to create a tour attraction app, where you can dis
 - [ ] Create a database function to `find` all places
 - [ ] Create an api endpoint in your `api/places` route for fetching all places from the database
 - [ ] Map over the fetched places to render the cards
+
+---
 
 ## Userstory 3 - Add new places
 
@@ -101,6 +107,8 @@ In this project you are going to create a tour attraction app, where you can dis
 - [ ] With the received data, create a new place document in the mongoDB
 - [ ] In the handleSubmit function, reroute the user to the main page after a successful `POST` request
 
+---
+
 ## Userstory 4 - Attraction details
 
 ### Value Proposition
@@ -131,6 +139,8 @@ In this project you are going to create a tour attraction app, where you can dis
 - [ ] Create an api endpoint in your `api/places/[id]` route for fetching the specific place from the database with a GET request
 - [ ] Create a page component in this file which displays the requested elements by fetching the necessary place data from that api endpoint
 
+---
+
 ## Userstory 5
 
 ### Value Proposition
@@ -157,6 +167,8 @@ In this project you are going to create a tour attraction app, where you can dis
 - [ ] Write an onClick function which triggers a DELETE request to the api endpoint `/api/places/[id]`
 - [ ] Create a database function to handle this `delete` request
 - [ ] On a successful delete, reroute the user to the main page
+
+---
 
 ## Userstory 6
 
